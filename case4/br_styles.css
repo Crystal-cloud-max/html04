@@ -1,0 +1,173 @@
+﻿@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+   
+   Browyer Realty Layout Styles
+   Author: 
+   Date: 
+	
+   Filename: br_styles.css
+
+*/
+html {
+    background-image: url(br_paper.png);
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+}
+body {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 640px;
+    max-width: 960px;
+    box-shadow: rgb(35, 29, 29) 10px 0 15px, rgb(35, 29, 29) -10px 0 15px;
+    background-color:white;
+}
+
+/*Header*/
+header > img{
+    display:block;
+    width:100%;
+    border-bottom:2px solid blue;
+}
+/*Sections*/
+section#left{
+    float:left;
+    width:20%;
+    margin-top:25px;
+    padding-bottom:110px;
+    background-color:snow;
+}
+section#center {
+    float: left;
+    width: 50%;
+    margin-top: 25px;
+    padding-bottom: 20px;
+}
+section#right {
+    float: left;
+    width: 30%;
+    margin-top: 25px;
+    padding-bottom: 20px;
+}
+/*Left Section*/
+
+section#left nav.vertical {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+    section#left nav.vertical li {
+        font-size: 1.5em;
+        line-height: 5;
+    }
+/*Center Section*/
+section#center article {
+    margin: 0px auto;
+    padding: 20px;
+    width: 95%;
+    background-color:snow;
+}
+section#center article h1{
+    font-size:2em;
+    font-weight:bold;
+    background-color:rgb(18, 53, 85);
+    color:white;
+    padding:20px;
+    padding-left:10px;
+}
+section#center article p{
+    font-size:1.2em;
+    margin-top:20px;
+    line-height:30px;
+}
+/*House List*/
+div#houseList{
+    position:relative;
+    height:450px;
+    overflow:auto;
+    background-color:white;
+}
+div.house img{
+    border-radius:50px;
+    width:95%;
+    box-shadow:rgb(83, 74, 74) 10px 10px 15px;
+}
+div.house {
+    position: absolute;
+    padding-left: 10px;
+}
+div#house1{
+    top:5px;
+}
+div#house2{
+    top:240px;
+}
+div#house3{
+    top:480px;
+}
+div#house4{
+    top: 720px;
+}
+div#house5 {
+    top: 970px;
+}
+div#house6 {
+    top: 1200px;
+}
+div#house7 {
+    top: 1430px;
+}
+div#house8 {
+    top: 1700px;
+}
+div#house9 {
+    top: 1950px;
+}
+/*Address*/
+section#right h1 {
+    background-color: blue;
+    color: white;
+    text-shadow: black 10px 10px 15px;
+    font: 2em;
+    text-align: center;
+    border: 1px solid black;
+}
+section#right address{
+    background-color:aliceblue;
+    font-size:14px;
+    text-align:center;
+    padding-bottom:10px;
+    border:2px solid black;
+
+}
+/*Description List*/
+dl{
+    background-color:aliceblue;
+    border-radius:20px;
+    border:2px solid black;
+    padding-left:10px;
+    padding-top:5px;
+}
+dt{
+    font-weight:bold;
+}
+/*Footer List*/
+footer nav.horizontal li {
+    float: left;
+    position: relative;
+    display: block;
+    width: 25%;
+    background-color:blue;
+}
+footer nav.horizontal a{
+    color:white;
+    font-size:1.2em;
+    text-align:center;
+    width:100%;
+    display:block;
+    line-height:1.5em;
+}
